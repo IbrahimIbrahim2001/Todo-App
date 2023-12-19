@@ -10,7 +10,7 @@ function App() {
     <div className="App h-screen bg-[#00C9AE] pt-5 ">
       <ToastContainer />
       <AnimatePresence mode="wait">
-        <Routes location={location} key={location.key}>
+        <Routes location={location} key={location.key} basename="/Todo-App">
           <Route path="/" element={<Start />} key="start"></Route>
           <Route path="/home" element={<Home />} key="home"></Route>
         </Routes>
